@@ -49,37 +49,36 @@
   ```sh
     npm install
   ```
-  e
-  ```sh
-    npm run postinstall
-  ```
 
 ---
 
 ## Executando Aplicação
 
-* Adicione as variáveis de ambiente necessárias no '.env'
+* Aplicação front-end foi desenvolvida pela [Trybe](https://www.betrybe.com/)
 
-* Entre na pasta do back-end:
+* Utilize o [Docker](https://www.docker.com/)
+
+* Entre na pasta do repositório que você clonou:
   ```sh
-    cd trybe-futebol-clube/app/backend
+    cd trybe-futebol-clube/app/
   ```
 
-* Inicie o projeto
+* Inicie o projeto:
   ```sh
-    npm start
+    docker build -t tfcbackend ./back-end/
   ```
 
-* Aplicação front-end desenvolvida pela [Trybe](https://www.betrybe.com/)
-
-* Entre na pasta do front-end:
   ```sh
-    cd trybe-futebol-clube/app/frontend
+    docker build -t tfcfrontend ./front-end/
   ```
 
-* Inicie o projeto
   ```sh
-    npm start
+    docker-compose up --build -d
+  ```
+
+* Acesse o endereço em seu navegador:
+  ```sh
+    http://localhost:3000/
   ```
 
 ---
