@@ -65,11 +65,11 @@
 
 * Inicie o projeto:
   ```sh
-    docker build -t tfcbackend ./back-end/
+    docker build -t tfcbackend ./backend/
   ```
 
   ```sh
-    docker build -t tfcfrontend ./front-end/
+    docker build -t tfcfrontend ./frontend/
   ```
 
   ```sh
